@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>Editable Invoice in JavaScrip</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<script type='text/javascript' src='js/jquery-3.6.1.min.js'></script>
+	<script type='text/javascript' src='js/custom.js'></script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<textarea id="header">INVOICE</textarea>
+		
+		<div id="identity">
+		
+            <textarea id="address">
+            	Dhaka science lab , suvastu Arcade
+				Phone: 01687493421
+			</textarea>
+
+		</div>
+		
+		<div style="clear:both"></div>
+		<div id="customer">
+            <table id="meta">
+                <tr>
+                    <td class="meta-head">Invoice #</td>
+                    <td><textarea>001</textarea></td>
+                </tr>
+                <tr>
+
+                    <td class="meta-head">Date</td>
+                    <td><textarea id="date">August 12, 2018</textarea></td>
+                </tr>
+             
+
+            </table>
+		
+		</div>
+		
+		<table id="items">
+		
+		  <tr>
+		      <th>Item</th>
+		      <th>Description</th>
+		      <th>Unit Cost</th>
+		      <th>Quantity</th>
+		      <th>Price</th>
+		  </tr>
+		  
+		  <tr class="item-row">
+		      <td class="item-name"><div class="delete-wpr"><textarea>Web Updates</textarea></td>
+		      <td class="description"><textarea>Monthly web updates for </textarea></td>
+		      <td><textarea class="cost">650.00</textarea></td>
+		      <td><textarea class="qty">1</textarea></td>
+		      <td><span class="price">650.00</span></td>
+		  </tr>
+	
+		  
+		  <tr id="hiderow">
+		    <td colspan="5"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
+		  </tr>
+		  
+		  <tr>
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="total-line">Subtotal</td>
+		      <td class="total-value"><div id="subtotal">650.00</div></td>
+		  </tr>
+		  <tr class="discount_value">
+			<td colspan="2" class="blank"> </td>
+			<td colspan="2" class="disc-line">Discount(%)</td>
+			<td class="disc-value"><textarea id="discount">0</textarea></td>
+		</tr>
+		  <tr class="gst_value">
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="gst-line">GST(%)</td>
+		      <td class="gst-value"><textarea id="gst">0</textarea></td>
+		  </tr>
+		  
+		  <tr>
+
+		      <td colspan="2" class="blank"> </td>
+		      <td colspan="2" class="total-line">Total</td>
+		      <td class="grand_total-value"><div id="grand_total">650.00</div></td>
+		  </tr>
+		</table>
+		
+		<div id="terms">
+		  <h5>4bitbd</h5>
+		 
+		</div>
+	
+	</div>
+	
+</body>
+
+</html>
